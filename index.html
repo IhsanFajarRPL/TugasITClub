@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        #canvas {
+            width: 960px;
+            height: 600px;
+            border: 1px solid #000000;
+        }
+    </style>
+    <title>Yaudah Iya Aku Kerjain</title>
+</head>
+
+<body>
+
+    <canvas id="canvas">I Want To Be Rich In Knowledge</canvas>
+
+    <script>
+        window.onload = init();
+
+        function init() {
+
+            setCanvas();
+
+            drawGeometry();
+        }
+
+        function setCanvas() {
+
+            canvas = document.getElementById('canvas')
+            pen = canvas.getContext('2d')
+
+            cw = canvas.width = 960;
+            ch = canvas.height = 600;
+
+        }
+
+        function drawGeometry() {
+            // baris 1 ke kanan no 1
+            pen.beginPath();
+            pen.fillStyle = '#700000';
+            pen.rect(10, 10, 100, 100);
+            pen.fill();
+            //baris 1 ke kanan no 2
+            pen.beginPath();
+            pen.fillStyle = '#990000'
+            pen.rect(cw / 2 - 50, 10, 100, 100);
+            pen.fill();
+            //baris 1 ke kanan no 3
+            pen.beginPath();
+            pen.fillStyle = '#ff0000';
+            pen.rect(850, 10, 100, 100);
+            pen.fill();
+
+
+            //baris 2 ke kanan no 1
+            pen.beginPath();
+            pen.fillStyle = '#8c8f00';
+            pen.rect(cw / 4 - 25, ch / 4 - 25, 100, 100);
+            pen.fill();
+            //baris 2 ke kanan no 2
+            pen.beginPath();
+            pen.fillStyle = '#babd03';
+            pen.rect((cw / 2) + (cw / 4) - 75, ch / 4 - 25, 100, 100);
+            pen.fill();
+
+
+            //baris 3 ke kanan no 1
+            pen.beginPath();
+            pen.fillStyle = '#086600';
+            pen.rect(10, ch / 2 - 50, 100, 100);
+            pen.fill();
+            //baris 3 ke kanan no 2
+            pen.beginPath();
+            pen.fillStyle = '#0c8d00';
+            pen.rect(cw / 2 - 50, ch / 2 - 50, 100, 100);
+            pen.fill();
+            //baris 3 ke kanan no 3
+            pen.beginPath();
+            pen.fillStyle = '#10be00';
+            pen.rect(850, ch / 2 - 50, 100, 100);
+            pen.fill();
+
+
+            //baris 4 ke kanan no 1
+            pen.beginPath();
+            pen.fillStyle = '#0b0070';
+            pen.rect(cw / 4 - 20, ch / 4 + 220, 100, 100);
+            pen.fill();
+            //baris 4 ke kanan no 2
+            pen.beginPath();
+            pen.fillStyle = '#1500d3';
+            pen.rect((cw / 2) + (cw / 4) - 75, ch / 2 + 75, 100, 100);
+            pen.fill();
+
+
+            //baris 5 ke kanan no 1
+            pen.beginPath();
+            pen.fillStyle = '#6e0056';
+            pen.rect(10, 490, 100, 100);
+            pen.fill();
+            //baris 5 ke kanan no 2
+            pen.beginPath();
+            pen.fillStyle = '#aa0085';
+            pen.rect(cw / 2 - 50, 490, 100, 100);
+            pen.fill();
+            //baris 5 ke kanan no 3
+            pen.beginPath();
+            pen.fillStyle = 'fa00c4';
+            pen.rect(850, 490, 100, 100);
+            pen.fill();
+
+
+        }
+    </script>
+
+    <!-- ------------------------------------- -->
+    <!-- CopyRight 2019 \ IHSAN FAJAR RAMADHAN -->
+    <!-- ------------------------------------- -->
+</body>
+
+</html>
